@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet href="file:///C|/Users/Maycon/Desktop/ARQUIVOS/Gamemodes/Z Nation - DayZ & Battle Royale/pawno/xml/pawndoc.xsl" type="text/xsl"?>
+<doc source="C:\Users\Maycon\Desktop\ARQUIVOS\Gamemodes\Z Nation - DayZ & Battle Royale\modulos\shop\shop.INC">
+	<assembly>
+		<name>shop.INC</name>
+	</assembly>
+	<members>
+
+		<!-- enumerations -->
+		<member name="T:p_enum_shop" value="7">
+			<tagname value="p_enum_shop"/>
+			<member name="C:ps_ai" value="0">
+			</member>
+			<member name="C:ps_modelid" value="1">
+			</member>
+			<member name="C:ps_cost" value="2">
+			</member>
+			<member name="C:ps_rarity" value="3">
+			</member>
+			<member name="C:ps_gender" value="4">
+			</member>
+			<member name="C:ps_legacy" value="5">
+			</member>
+			<member name="C:ps_time" value="6">
+			</member>
+		</member>
+
+		<!-- constants -->
+		<member name="C:CRATE_TYPE_DAILY" value="1">
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<referrer name="SHOP_GiveDailyCrate"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="C:CRATE_TYPE_DIAMOND" value="4">
+			<referrer name="CreateModelsArtWork"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="C:CRATE_TYPE_GOLD" value="3">
+			<referrer name="CreateModelsArtWork"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="C:CRATE_TYPE_LEGENDARY" value="5">
+			<referrer name="CreateModelsArtWork"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="C:CRATE_TYPE_SILVER" value="2">
+			<referrer name="CreateModelsArtWork"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="C:CRATE_TYPE_ULTIMATE" value="6">
+			<referrer name="CreateModelsArtWork"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="C:EOS" value="0">
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+		</member>
+		<member name="C:ORDER_BY_BCOST" value="2">
+			<referrer name="SHOP_UpdateOrder"/>
+		</member>
+		<member name="C:ORDER_BY_CRATES" value="7">
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+		</member>
+		<member name="C:ORDER_BY_DATE" value="4">
+			<referrer name="SHOP_UpdateOrder"/>
+		</member>
+		<member name="C:ORDER_BY_FEMALE" value="6">
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+		</member>
+		<member name="C:ORDER_BY_LCOST" value="1">
+			<referrer name="SHOP_UpdateOrder"/>
+		</member>
+		<member name="C:ORDER_BY_MALE" value="5">
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+		</member>
+		<member name="C:ORDER_BY_RANDOM" value="0">
+			<referrer name="SHOP_UpdateOrder"/>
+		</member>
+		<member name="C:ORDER_BY_RARITY" value="3">
+			<referrer name="SHOP_UpdateOrder"/>
+		</member>
+		<member name="C:SKIN_GENDER_FEMALE" value="1">
+			<referrer name="CreateModelsArtWork"/>
+		</member>
+		<member name="C:SKIN_GENDER_MALE" value="0">
+			<referrer name="CreateModelsArtWork"/>
+		</member>
+		<member name="C:SKIN_RARITY_COMUM" value="0">
+			<referrer name="CreateModelsArtWork"/>
+			<referrer name="SHOP_GiveDailyCrate"/>
+		</member>
+		<member name="C:SKIN_RARITY_LEGENDARY" value="2">
+			<referrer name="CreateModelsArtWork"/>
+		</member>
+		<member name="C:SKIN_RARITY_RARE" value="1">
+			<referrer name="CreateModelsArtWork"/>
+		</member>
+		<member name="C:SKIN_RARITY_ULTIMATE" value="3">
+			<referrer name="CreateModelsArtWork"/>
+		</member>
+		<member name="C:SKIN_SELECT_INVENTORY" value="1">
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="C:SKIN_SELECT_SHOP" value="0">
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="C:false" value="0">
+			<tagname value="bool"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="OnPlayerFinishedDownloading"/>
+		</member>
+		<member name="C:true" value="1">
+			<tagname value="bool"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+		</member>
+
+		<!-- variables -->
+		<member name="F:SERVER_DOWNLOAD">
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="F:playerShopText">
+			<tagname value="PlayerText"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="F:ps_array">
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="SHOP_OnPlayerUseCrate"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="F:ps_current_page">
+			<referrer name="SHOP_SetPlayerOrder"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+		</member>
+		<member name="F:ps_num_rows">
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+		</member>
+		<member name="F:serverShopTexts">
+			<tagname value="Text"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="F:shop_database">
+			<tagname value="DB"/>
+			<referrer name="SHOP_OpenDatabase"/>
+		</member>
+		<member name="F:trx">
+			<tagname value="Float"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+		<member name="F:try">
+			<tagname value="Float"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+		<member name="F:trz">
+			<tagname value="Float"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+		<member name="F:ttx">
+			<tagname value="Float"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+		<member name="F:tty">
+			<tagname value="Float"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+		<member name="F:ttz">
+			<tagname value="Float"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+
+		<!-- functions -->
+		<member name="M:AddCharModel" syntax="AddCharModel()">
+			<stacksize value="1"/>
+			<referrer name="CreateModelsArtWork"/>
+			<referrer name="SHOP_AddNewItem"/>
+		</member>
+		<member name="M:AddSimpleModel" syntax="AddSimpleModel()">
+			<stacksize value="1"/>
+			<referrer name="CreateModelsArtWork"/>
+		</member>
+		<member name="M:ConvertTimeSkin" syntax="ConvertTimeSkin()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_GiveItem"/>
+			<referrer name="SHOP_CheckNewItems"/>
+		</member>
+		<member name="M:CreateActor" syntax="CreateActor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_CreateActor"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="M:CreateModelsArtWork" syntax="CreateModelsArtWork()">
+			<stacksize value="9"/>
+			<dependency name="AddCharModel"/>
+			<dependency name="AddSimpleModel"/>
+			<dependency name="CRATE_TYPE_DIAMOND"/>
+			<dependency name="CRATE_TYPE_GOLD"/>
+			<dependency name="CRATE_TYPE_LEGENDARY"/>
+			<dependency name="CRATE_TYPE_SILVER"/>
+			<dependency name="CRATE_TYPE_ULTIMATE"/>
+			<dependency name="SHOP_AddNewItem"/>
+			<dependency name="SKIN_GENDER_FEMALE"/>
+			<dependency name="SKIN_GENDER_MALE"/>
+			<dependency name="SKIN_RARITY_COMUM"/>
+			<dependency name="SKIN_RARITY_LEGENDARY"/>
+			<dependency name="SKIN_RARITY_RARE"/>
+			<dependency name="SKIN_RARITY_ULTIMATE"/>
+			<dependency name="cost"/>
+		</member>
+		<member name="M:CreatePlayerTextDraw" syntax="CreatePlayerTextDraw()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:DeletePVar" syntax="DeletePVar()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+		</member>
+		<member name="M:DestroyActor" syntax="DestroyActor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_CreateActor"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="M:EditAttachedObject" syntax="EditAttachedObject()">
+			<stacksize value="1"/>
+			<referrer name="attachar"/>
+			<referrer name="editattach"/>
+		</member>
+		<member name="M:FindModelFileNameFromCRC" syntax="FindModelFileNameFromCRC()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:FindTextureFileNameFromCRC" syntax="FindTextureFileNameFromCRC()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:GetPVarInt" syntax="GetPVarInt()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="SHOP_OnPlayerUseCrate"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="OnPlayerRequestDownload"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:GetPlayerCustomSkin" syntax="GetPlayerCustomSkin()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+		<member name="M:GivePlayerCoins" syntax="GivePlayerCoins()">
+			<stacksize value="1"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:InterpolateCameraLookAt" syntax="InterpolateCameraLookAt()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:InterpolateCameraPos" syntax="InterpolateCameraPos()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:IsPlayerAdmin" syntax="IsPlayerAdmin()">
+			<stacksize value="1"/>
+			<referrer name="attachar"/>
+			<referrer name="editattach"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+		</member>
+		<member name="M:IsPlayerConnected" syntax="IsPlayerConnected()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:Log" syntax="Log()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OpenCrate"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:OnPlayerClickPlayerTextDraw" syntax="OnPlayerClickPlayerTextDraw(playerid, playertextid)">
+			<attribute name="public"/>
+			<stacksize value="138"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="SHOP_CreateActor"/>
+			<dependency name="SHOP_HideBoxDiscription"/>
+			<dependency name="SHOP_OnPlayerSelectCrate"/>
+			<dependency name="SHOP_OnPlayerSelectItem"/>
+			<dependency name="SHOP_OnPlayerUseCrate"/>
+			<dependency name="SKIN_SELECT_INVENTORY"/>
+			<dependency name="ShowPlayerDialogTextdraw"/>
+			<dependency name="dSkin"/>
+			<dependency name="format"/>
+			<dependency name="getMoneyFormat"/>
+			<dependency name="playerShopText"/>
+			<dependency name="ps_array"/>
+			<dependency name="ps_cost"/>
+			<dependency name="ps_current_page"/>
+			<dependency name="ps_gender"/>
+			<dependency name="ps_legacy"/>
+			<dependency name="ps_modelid"/>
+			<dependency name="ps_rarity"/>
+			<dependency name="ps_time"/>
+			<dependency name="savePlayerAccount"/>
+			<param name="playerid">
+			</param>
+			<param name="playertextid">
+				<paraminfo>PlayerText </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnPlayerClickTextDraw" syntax="OnPlayerClickTextDraw(playerid, clickedid)">
+			<attribute name="public"/>
+			<stacksize value="34"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="ORDER_BY_CRATES"/>
+			<dependency name="ORDER_BY_FEMALE"/>
+			<dependency name="ORDER_BY_MALE"/>
+			<dependency name="PlayerTextDrawSetString"/>
+			<dependency name="SHOP_HideBoxDiscription"/>
+			<dependency name="SHOP_HideForPlayer"/>
+			<dependency name="SHOP_SetPlayerMode"/>
+			<dependency name="SHOP_SetPlayerOrder"/>
+			<dependency name="SHOP_UpdateTexts"/>
+			<dependency name="SKIN_SELECT_INVENTORY"/>
+			<dependency name="SKIN_SELECT_SHOP"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="ShowPlayerDialogTextdraw"/>
+			<dependency name="ShowPlayerPrizeDialog"/>
+			<dependency name="TextDrawColor"/>
+			<dependency name="TextDrawShowForPlayer"/>
+			<dependency name="format"/>
+			<dependency name="getMoneyFormat"/>
+			<dependency name="playerShopText"/>
+			<dependency name="ps_array"/>
+			<dependency name="ps_cost"/>
+			<dependency name="ps_current_page"/>
+			<dependency name="ps_num_rows"/>
+			<dependency name="serverShopTexts"/>
+			<dependency name="true"/>
+			<param name="playerid">
+			</param>
+			<param name="clickedid">
+				<paraminfo>Text </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnPlayerEditAttachedObject" syntax="OnPlayerEditAttachedObject(playerid, response, index, modelid, boneid, fOffsetX, fOffsetY, fOffsetZ, fRotX, fRotY, fRotZ, fScaleX, fScaleY, fScaleZ)">
+			<attribute name="public"/>
+			<stacksize value="15"/>
+			<dependency name="GetPlayerCustomSkin"/>
+			<dependency name="IsPlayerAdmin"/>
+			<dependency name="SHOP_NewAttachment"/>
+			<dependency name="trx"/>
+			<dependency name="try"/>
+			<dependency name="trz"/>
+			<dependency name="ttx"/>
+			<dependency name="tty"/>
+			<dependency name="ttz"/>
+			<param name="playerid">
+			</param>
+			<param name="response">
+			</param>
+			<param name="index">
+			</param>
+			<param name="modelid">
+			</param>
+			<param name="boneid">
+			</param>
+			<param name="fOffsetX">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fOffsetY">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fOffsetZ">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fRotX">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fRotY">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fRotZ">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fScaleX">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fScaleY">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="fScaleZ">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:OnPlayerFinishedDownloading" syntax="OnPlayerFinishedDownloading(playerid, virtualworld)">
+			<attribute name="public"/>
+			<stacksize value="6"/>
+			<dependency name="dDownloading"/>
+			<dependency name="dLogged"/>
+			<dependency name="false"/>
+			<dependency name="getNome"/>
+			<dependency name="printf"/>
+			<dependency name="showPlayerLoading"/>
+			<param name="playerid">
+			</param>
+			<param name="virtualworld">
+			</param>
+		</member>
+		<member name="M:OnPlayerRequestDownload" syntax="OnPlayerRequestDownload(playerid, type, crc)">
+			<attribute name="public"/>
+			<stacksize value="429"/>
+			<dependency name="FindModelFileNameFromCRC"/>
+			<dependency name="FindTextureFileNameFromCRC"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="InterpolateCameraLookAt"/>
+			<dependency name="InterpolateCameraPos"/>
+			<dependency name="IsPlayerConnected"/>
+			<dependency name="PlayAudioStreamForPlayer"/>
+			<dependency name="RedirectDownload"/>
+			<dependency name="SERVER_DOWNLOAD"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="SetPlayerPos"/>
+			<dependency name="SetPlayerTime"/>
+			<dependency name="SetPlayerVirtualWorld"/>
+			<dependency name="SetPlayerWeather"/>
+			<dependency name="clearPlayerChat"/>
+			<dependency name="format"/>
+			<dependency name="gettime"/>
+			<dependency name="printf"/>
+			<param name="playerid">
+			</param>
+			<param name="type">
+			</param>
+			<param name="crc">
+			</param>
+		</member>
+		<member name="M:OnTextDialogResponse" syntax="OnTextDialogResponse(playerid, dialogid, response)">
+			<attribute name="public"/>
+			<stacksize value="25"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="GivePlayerCoins"/>
+			<dependency name="Log"/>
+			<dependency name="SHOP_DeleteSkin"/>
+			<dependency name="SHOP_FixSkin"/>
+			<dependency name="SHOP_GiveItem"/>
+			<dependency name="SHOP_SetPlayerOrder"/>
+			<dependency name="ShowPlayerDialogTextdraw"/>
+			<dependency name="dCoins"/>
+			<dependency name="dMoney"/>
+			<dependency name="getNome"/>
+			<dependency name="gettime"/>
+			<dependency name="ps_ai"/>
+			<dependency name="ps_array"/>
+			<dependency name="ps_cost"/>
+			<dependency name="ps_gender"/>
+			<dependency name="ps_modelid"/>
+			<dependency name="ps_rarity"/>
+			<param name="playerid">
+			</param>
+			<param name="dialogid">
+			</param>
+			<param name="response">
+			</param>
+		</member>
+		<member name="M:PlayAudioStreamForPlayer" syntax="PlayAudioStreamForPlayer()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:PlayerData" syntax="PlayerData()">
+			<stacksize value="1"/>
+		</member>
+		<member name="M:PlayerTextDrawAlignment" syntax="PlayerTextDrawAlignment()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawBackgroundColor" syntax="PlayerTextDrawBackgroundColor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawBoxColor" syntax="PlayerTextDrawBoxColor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawColor" syntax="PlayerTextDrawColor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawFont" syntax="PlayerTextDrawFont()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawHide" syntax="PlayerTextDrawHide()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_HideBoxDiscription"/>
+		</member>
+		<member name="M:PlayerTextDrawLetterSize" syntax="PlayerTextDrawLetterSize()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawSetOutline" syntax="PlayerTextDrawSetOutline()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawSetProportional" syntax="PlayerTextDrawSetProportional()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawSetSelectable" syntax="PlayerTextDrawSetSelectable()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawSetShadow" syntax="PlayerTextDrawSetShadow()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawSetString" syntax="PlayerTextDrawSetString()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="M:PlayerTextDrawShow" syntax="PlayerTextDrawShow()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_ShowBoxDiscription"/>
+		</member>
+		<member name="M:PlayerTextDrawTextSize" syntax="PlayerTextDrawTextSize()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:PlayerTextDrawUseBox" syntax="PlayerTextDrawUseBox()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreatePlayerTextDraws"/>
+		</member>
+		<member name="M:RedirectDownload" syntax="RedirectDownload()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:SHOP_AddNewItem" syntax="SHOP_AddNewItem(baseid, modelid, dff[], txd[], rarity, gender, cost, name[])">
+			<stacksize value="268"/>
+			<referrer name="CreateModelsArtWork"/>
+			<dependency name="AddCharModel"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_num_rows"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<param name="baseid">
+			</param>
+			<param name="modelid">
+			</param>
+			<param name="dff">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="txd">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="rarity">
+			</param>
+			<param name="gender">
+			</param>
+			<param name="cost">
+			</param>
+			<param name="name">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:SHOP_CheckNewItems" syntax="SHOP_CheckNewItems(playerid)">
+			<stacksize value="158"/>
+			<referrer name="SHOP_GiveDailyCrate"/>
+			<referrer name="SHOP_EncomendarItem"/>
+			<referrer name="SHOP_PrizeItem"/>
+			<dependency name="ConvertTimeSkin"/>
+			<dependency name="ShowPlayerReward"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_get_field_assoc_int"/>
+			<dependency name="db_num_rows"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<dependency name="getNome"/>
+			<dependency name="gettime"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_CreateActor" syntax="SHOP_CreateActor(playerid)">
+			<stacksize value="8"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<dependency name="CreateActor"/>
+			<dependency name="DestroyActor"/>
+			<dependency name="SetActorVirtualWorld"/>
+			<dependency name="dActorId"/>
+			<dependency name="dSkin"/>
+			<dependency name="dTempSkin"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_CreatePlayerTextDraws" syntax="SHOP_CreatePlayerTextDraws(playerid)">
+			<stacksize value="7"/>
+			<dependency name="CreatePlayerTextDraw"/>
+			<dependency name="PlayerTextDrawAlignment"/>
+			<dependency name="PlayerTextDrawBackgroundColor"/>
+			<dependency name="PlayerTextDrawBoxColor"/>
+			<dependency name="PlayerTextDrawColor"/>
+			<dependency name="PlayerTextDrawFont"/>
+			<dependency name="PlayerTextDrawLetterSize"/>
+			<dependency name="PlayerTextDrawSetOutline"/>
+			<dependency name="PlayerTextDrawSetProportional"/>
+			<dependency name="PlayerTextDrawSetSelectable"/>
+			<dependency name="PlayerTextDrawSetShadow"/>
+			<dependency name="PlayerTextDrawTextSize"/>
+			<dependency name="PlayerTextDrawUseBox"/>
+			<dependency name="playerShopText"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_CreateTextDraws" syntax="SHOP_CreateTextDraws()">
+			<stacksize value="6"/>
+			<dependency name="TextDrawBackgroundColor"/>
+			<dependency name="TextDrawBoxColor"/>
+			<dependency name="TextDrawColor"/>
+			<dependency name="TextDrawCreate"/>
+			<dependency name="TextDrawFont"/>
+			<dependency name="TextDrawLetterSize"/>
+			<dependency name="TextDrawSetOutline"/>
+			<dependency name="TextDrawSetProportional"/>
+			<dependency name="TextDrawSetSelectable"/>
+			<dependency name="TextDrawSetShadow"/>
+			<dependency name="TextDrawTextSize"/>
+			<dependency name="TextDrawUseBox"/>
+			<dependency name="serverShopTexts"/>
+		</member>
+		<member name="M:SHOP_DeleteExpiredItems" syntax="SHOP_DeleteExpiredItems()">
+			<stacksize value="82"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<dependency name="gettime"/>
+		</member>
+		<member name="M:SHOP_DeleteSkin" syntax="SHOP_DeleteSkin(playerid, AI)">
+			<stacksize value="82"/>
+			<referrer name="SHOP_OnPlayerUseCrate"/>
+			<referrer name="OnTextDialogResponse"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<param name="playerid">
+			</param>
+			<param name="AI">
+			</param>
+		</member>
+		<member name="M:SHOP_EncomendarItem" syntax="SHOP_EncomendarItem(nickname[], modelid, cost, rarity, gender, time, legacy, name[], notification)">
+			<stacksize value="370"/>
+			<referrer name="darskin"/>
+			<dependency name="SHOP_CheckNewItems"/>
+			<dependency name="dLogged"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<dependency name="getId"/>
+			<param name="nickname">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="modelid">
+			</param>
+			<param name="cost">
+			</param>
+			<param name="rarity">
+			</param>
+			<param name="gender">
+			</param>
+			<param name="time">
+			</param>
+			<param name="legacy">
+			</param>
+			<param name="name">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="notification">
+			</param>
+		</member>
+		<member name="M:SHOP_FixSkin" syntax="SHOP_FixSkin(playerid)">
+			<stacksize value="5"/>
+			<referrer name="OnTextDialogResponse"/>
+			<dependency name="SHOP_IsPlayerHaveSkinId"/>
+			<dependency name="dSkin"/>
+			<dependency name="dTempSkin"/>
+			<dependency name="random"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_GiveDailyCrate" syntax="SHOP_GiveDailyCrate(playerid)">
+			<stacksize value="22"/>
+			<dependency name="CRATE_TYPE_DAILY"/>
+			<dependency name="SHOP_CheckNewItems"/>
+			<dependency name="SHOP_GiveItem"/>
+			<dependency name="SKIN_RARITY_COMUM"/>
+			<dependency name="dDailyCrate"/>
+			<dependency name="gettime"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_GiveItem" syntax="SHOP_GiveItem(playerid, modelid, cost, rarity, gender, time, legacy, name[], notification)">
+			<stacksize value="383"/>
+			<referrer name="SHOP_GiveDailyCrate"/>
+			<referrer name="SHOP_OpenCrate"/>
+			<referrer name="OnTextDialogResponse"/>
+			<dependency name="ConvertTimeSkin"/>
+			<dependency name="ShowPlayerReward"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<dependency name="getNome"/>
+			<dependency name="gettime"/>
+			<param name="playerid">
+			</param>
+			<param name="modelid">
+			</param>
+			<param name="cost">
+			</param>
+			<param name="rarity">
+			</param>
+			<param name="gender">
+			</param>
+			<param name="time">
+			</param>
+			<param name="legacy">
+			</param>
+			<param name="name">
+				<paraminfo> [] </paraminfo>
+			</param>
+			<param name="notification">
+			</param>
+		</member>
+		<member name="M:SHOP_HideBoxDiscription" syntax="SHOP_HideBoxDiscription(playerid)">
+			<stacksize value="6"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<dependency name="PlayerTextDrawHide"/>
+			<dependency name="TextDrawHideForPlayer"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_HideForPlayer" syntax="SHOP_HideForPlayer(playerid)">
+			<stacksize value="11"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<dependency name="CreateActor"/>
+			<dependency name="DeletePVar"/>
+			<dependency name="DestroyActor"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="InterpolateCameraLookAt"/>
+			<dependency name="InterpolateCameraPos"/>
+			<dependency name="PlayerTextDrawHide"/>
+			<dependency name="SHOP_HideBoxDiscription"/>
+			<dependency name="SetActorVirtualWorld"/>
+			<dependency name="TextDrawHideForPlayer"/>
+			<dependency name="dActorId"/>
+			<dependency name="dSkin"/>
+			<dependency name="dTempSkin"/>
+			<dependency name="playerShopText"/>
+			<dependency name="serverShopTexts"/>
+			<dependency name="showLoginMenu"/>
+			<dependency name="true"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_IsPlayerHaveSkinId" syntax="SHOP_IsPlayerHaveSkinId(playerid, modelid)">
+			<stacksize value="144"/>
+			<referrer name="SHOP_FixSkin"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_num_rows"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<dependency name="getNome"/>
+			<param name="playerid">
+			</param>
+			<param name="modelid">
+			</param>
+		</member>
+		<member name="M:SHOP_NewAttachment" syntax="SHOP_NewAttachment(skinid, objectid, boneid, x, y, z, rx, ry, rz, sizex, sizey, sizez)">
+			<stacksize value="375"/>
+			<referrer name="OnPlayerEditAttachedObject"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_num_rows"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<param name="skinid">
+			</param>
+			<param name="objectid">
+			</param>
+			<param name="boneid">
+			</param>
+			<param name="x">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="y">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="z">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="rx">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="ry">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="rz">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="sizex">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="sizey">
+				<paraminfo>Float </paraminfo>
+			</param>
+			<param name="sizez">
+				<paraminfo>Float </paraminfo>
+			</param>
+		</member>
+		<member name="M:SHOP_OnPlayerSelectCrate" syntax="SHOP_OnPlayerSelectCrate(playerid, type)">
+			<stacksize value="5"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<dependency name="CRATE_TYPE_DAILY"/>
+			<dependency name="CRATE_TYPE_DIAMOND"/>
+			<dependency name="CRATE_TYPE_GOLD"/>
+			<dependency name="CRATE_TYPE_LEGENDARY"/>
+			<dependency name="CRATE_TYPE_SILVER"/>
+			<dependency name="CRATE_TYPE_ULTIMATE"/>
+			<dependency name="EOS"/>
+			<dependency name="PlayerTextDrawSetString"/>
+			<dependency name="SHOP_ShowBoxDiscription"/>
+			<dependency name="strcat"/>
+			<param name="playerid">
+			</param>
+			<param name="type">
+			</param>
+		</member>
+		<member name="M:SHOP_OnPlayerSelectItem" syntax="SHOP_OnPlayerSelectItem(playerid, index, modelid, cost, rarity, gender, time, legacy)">
+			<stacksize value="137"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<dependency name="ConvertTimeSkin"/>
+			<dependency name="CreateActor"/>
+			<dependency name="DestroyActor"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="PlayerTextDrawHide"/>
+			<dependency name="PlayerTextDrawSetString"/>
+			<dependency name="PlayerTextDrawShow"/>
+			<dependency name="SKIN_SELECT_INVENTORY"/>
+			<dependency name="SKIN_SELECT_SHOP"/>
+			<dependency name="SetActorVirtualWorld"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="TextDrawHideForPlayer"/>
+			<dependency name="TextDrawShowForPlayer"/>
+			<dependency name="dActorId"/>
+			<dependency name="format"/>
+			<dependency name="getMoneyFormat"/>
+			<dependency name="gettime"/>
+			<dependency name="playerShopText"/>
+			<dependency name="serverShopTexts"/>
+			<param name="playerid">
+			</param>
+			<param name="index">
+			</param>
+			<param name="modelid">
+			</param>
+			<param name="cost">
+			</param>
+			<param name="rarity">
+			</param>
+			<param name="gender">
+			</param>
+			<param name="time">
+			</param>
+			<param name="legacy">
+			</param>
+		</member>
+		<member name="M:SHOP_OnPlayerUseCrate" syntax="SHOP_OnPlayerUseCrate(playerid, type)">
+			<stacksize value="7"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="SHOP_DeleteSkin"/>
+			<dependency name="SHOP_OpenCrate"/>
+			<dependency name="SHOP_SetPlayerOrder"/>
+			<dependency name="ps_ai"/>
+			<dependency name="ps_array"/>
+			<param name="playerid">
+			</param>
+			<param name="type">
+			</param>
+		</member>
+		<member name="M:SHOP_OpenCrate" syntax="SHOP_OpenCrate(playerid, type)">
+			<stacksize value="155"/>
+			<referrer name="SHOP_OnPlayerUseCrate"/>
+			<dependency name="CRATE_TYPE_DAILY"/>
+			<dependency name="CRATE_TYPE_DIAMOND"/>
+			<dependency name="CRATE_TYPE_GOLD"/>
+			<dependency name="CRATE_TYPE_LEGENDARY"/>
+			<dependency name="CRATE_TYPE_SILVER"/>
+			<dependency name="CRATE_TYPE_ULTIMATE"/>
+			<dependency name="Log"/>
+			<dependency name="SHOP_GiveItem"/>
+			<dependency name="dMoney"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_get_field_assoc_int"/>
+			<dependency name="db_num_rows"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<dependency name="getNome"/>
+			<dependency name="gettime"/>
+			<dependency name="givePlayerPoints"/>
+			<dependency name="random"/>
+			<param name="playerid">
+			</param>
+			<param name="type">
+			</param>
+		</member>
+		<member name="M:SHOP_OpenDatabase" syntax="SHOP_OpenDatabase()">
+			<stacksize value="5"/>
+			<dependency name="db_open"/>
+			<dependency name="db_query"/>
+			<dependency name="shop_database"/>
+		</member>
+		<member name="M:SHOP_PrizeItem" syntax="SHOP_PrizeItem(AI, nickname[])">
+			<stacksize value="136"/>
+			<dependency name="SHOP_CheckNewItems"/>
+			<dependency name="dLogged"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<dependency name="getId"/>
+			<param name="AI">
+			</param>
+			<param name="nickname">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:SHOP_SetPlayerAttachedObject" syntax="SHOP_SetPlayerAttachedObject(playerid, slotid, modelid)">
+			<stacksize value="103"/>
+			<dependency name="SetPlayerAttachedObject"/>
+			<dependency name="dSkin"/>
+			<dependency name="dTempSkin"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_get_field_assoc_float"/>
+			<dependency name="db_get_field_assoc_int"/>
+			<dependency name="db_num_rows"/>
+			<dependency name="db_query"/>
+			<dependency name="format"/>
+			<param name="playerid">
+			</param>
+			<param name="slotid">
+			</param>
+			<param name="modelid">
+			</param>
+		</member>
+		<member name="M:SHOP_SetPlayerMode" syntax="SHOP_SetPlayerMode(playerid, modeid)">
+			<stacksize value="6"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<dependency name="SHOP_SetPlayerOrder"/>
+			<dependency name="SetPVarInt"/>
+			<param name="playerid">
+			</param>
+			<param name="modeid">
+			</param>
+		</member>
+		<member name="M:SHOP_SetPlayerOrder" syntax="SHOP_SetPlayerOrder(playerid, orderby)">
+			<stacksize value="6"/>
+			<referrer name="SHOP_SetPlayerMode"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="SHOP_OnPlayerUseCrate"/>
+			<referrer name="OnTextDialogResponse"/>
+			<dependency name="SHOP_UpdateOrder"/>
+			<dependency name="SHOP_UpdateTexts"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="ps_current_page"/>
+			<param name="playerid">
+			</param>
+			<param name="orderby">
+			</param>
+		</member>
+		<member name="M:SHOP_ShowBoxDiscription" syntax="SHOP_ShowBoxDiscription(playerid)">
+			<stacksize value="6"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+			<dependency name="PlayerTextDrawShow"/>
+			<dependency name="TextDrawShowForPlayer"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_ShowForPlayer" syntax="SHOP_ShowForPlayer(playerid)">
+			<stacksize value="11"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="InterpolateCameraLookAt"/>
+			<dependency name="InterpolateCameraPos"/>
+			<dependency name="PlayerTextDrawShow"/>
+			<dependency name="SHOP_HideBoxDiscription"/>
+			<dependency name="SHOP_SetPlayerOrder"/>
+			<dependency name="SHOP_UpdateTexts"/>
+			<dependency name="SKIN_SELECT_INVENTORY"/>
+			<dependency name="SKIN_SELECT_SHOP"/>
+			<dependency name="SetPVarInt"/>
+			<dependency name="TextDrawColor"/>
+			<dependency name="TextDrawShowForPlayer"/>
+			<dependency name="false"/>
+			<dependency name="hideLoginMenu"/>
+			<dependency name="playerShopText"/>
+			<dependency name="serverShopTexts"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_StoreQuery" syntax="SHOP_StoreQuery(playerid, query[])">
+			<stacksize value="7"/>
+			<referrer name="SHOP_UpdateOrder"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="SKIN_SELECT_INVENTORY"/>
+			<dependency name="db_free_result"/>
+			<dependency name="db_get_field_assoc_int"/>
+			<dependency name="db_next_row"/>
+			<dependency name="db_num_rows"/>
+			<dependency name="db_query"/>
+			<dependency name="ps_ai"/>
+			<dependency name="ps_array"/>
+			<dependency name="ps_array"/>
+			<dependency name="ps_cost"/>
+			<dependency name="ps_gender"/>
+			<dependency name="ps_legacy"/>
+			<dependency name="ps_modelid"/>
+			<dependency name="ps_num_rows"/>
+			<dependency name="ps_rarity"/>
+			<dependency name="ps_time"/>
+			<param name="playerid">
+			</param>
+			<param name="query">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:SHOP_UpdateOrder" syntax="SHOP_UpdateOrder(playerid)">
+			<stacksize value="192"/>
+			<referrer name="SHOP_SetPlayerOrder"/>
+			<dependency name="GetPVarInt"/>
+			<dependency name="ORDER_BY_BCOST"/>
+			<dependency name="ORDER_BY_CRATES"/>
+			<dependency name="ORDER_BY_DATE"/>
+			<dependency name="ORDER_BY_FEMALE"/>
+			<dependency name="ORDER_BY_LCOST"/>
+			<dependency name="ORDER_BY_MALE"/>
+			<dependency name="ORDER_BY_RANDOM"/>
+			<dependency name="ORDER_BY_RARITY"/>
+			<dependency name="SHOP_HideBoxDiscription"/>
+			<dependency name="SHOP_StoreQuery"/>
+			<dependency name="SKIN_SELECT_INVENTORY"/>
+			<dependency name="SKIN_SELECT_SHOP"/>
+			<dependency name="format"/>
+			<dependency name="getNome"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SHOP_UpdateTexts" syntax="SHOP_UpdateTexts(playerid)">
+			<stacksize value="139"/>
+			<referrer name="SHOP_SetPlayerOrder"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<dependency name="PlayerTextDrawHide"/>
+			<dependency name="PlayerTextDrawSetString"/>
+			<dependency name="PlayerTextDrawShow"/>
+			<dependency name="TextDrawHideForPlayer"/>
+			<dependency name="format"/>
+			<dependency name="playerShopText"/>
+			<dependency name="ps_array"/>
+			<dependency name="ps_current_page"/>
+			<dependency name="ps_modelid"/>
+			<dependency name="ps_num_rows"/>
+			<dependency name="serverShopTexts"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:SendClientMessage" syntax="SendClientMessage()">
+			<stacksize value="1"/>
+			<referrer name="darskin"/>
+			<referrer name="attachar"/>
+			<referrer name="editattach"/>
+		</member>
+		<member name="M:SendClientMessagef" syntax="SendClientMessagef()">
+			<stacksize value="1"/>
+			<referrer name="darskin"/>
+		</member>
+		<member name="M:SetActorVirtualWorld" syntax="SetActorVirtualWorld()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_CreateActor"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="M:SetPVarInt" syntax="SetPVarInt()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_SetPlayerMode"/>
+			<referrer name="SHOP_SetPlayerOrder"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:SetPlayerAttachedObject" syntax="SetPlayerAttachedObject()">
+			<stacksize value="1"/>
+			<referrer name="attachar"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+		</member>
+		<member name="M:SetPlayerPos" syntax="SetPlayerPos()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:SetPlayerTime" syntax="SetPlayerTime()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:SetPlayerVirtualWorld" syntax="SetPlayerVirtualWorld()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:SetPlayerWeather" syntax="SetPlayerWeather()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:ShowPlayerDialog" syntax="ShowPlayerDialog()">
+			<stacksize value="1"/>
+			<referrer name="ShowPlayerPrizeDialog"/>
+		</member>
+		<member name="M:ShowPlayerDialogTextdraw" syntax="ShowPlayerDialogTextdraw()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:ShowPlayerPrizeDialog" syntax="ShowPlayerPrizeDialog(playerid)">
+			<stacksize value="10"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<dependency name="ShowPlayerDialog"/>
+			<param name="playerid">
+			</param>
+		</member>
+		<member name="M:ShowPlayerReward" syntax="ShowPlayerReward()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_GiveItem"/>
+			<referrer name="SHOP_CheckNewItems"/>
+		</member>
+		<member name="M:TextDrawBackgroundColor" syntax="TextDrawBackgroundColor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawBoxColor" syntax="TextDrawBoxColor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawColor" syntax="TextDrawColor()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawCreate" syntax="TextDrawCreate()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawFont" syntax="TextDrawFont()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawHideForPlayer" syntax="TextDrawHideForPlayer()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_HideBoxDiscription"/>
+		</member>
+		<member name="M:TextDrawLetterSize" syntax="TextDrawLetterSize()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawSetOutline" syntax="TextDrawSetOutline()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawSetProportional" syntax="TextDrawSetProportional()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawSetSelectable" syntax="TextDrawSetSelectable()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawSetShadow" syntax="TextDrawSetShadow()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawShowForPlayer" syntax="TextDrawShowForPlayer()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_ShowBoxDiscription"/>
+		</member>
+		<member name="M:TextDrawTextSize" syntax="TextDrawTextSize()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:TextDrawUseBox" syntax="TextDrawUseBox()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_CreateTextDraws"/>
+		</member>
+		<member name="M:attachar" syntax="attachar(playerid, params[])">
+			<tagname value="CMD"/>
+			<stacksize value="16"/>
+			<dependency name="EditAttachedObject"/>
+			<dependency name="IsPlayerAdmin"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SetPlayerAttachedObject"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:clearPlayerChat" syntax="clearPlayerChat()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+		</member>
+		<member name="M:cost" syntax="cost()">
+			<stacksize value="1"/>
+			<referrer name="CreateModelsArtWork"/>
+		</member>
+		<member name="M:dActorId" syntax="dActorId()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_CreateActor"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="M:dAdmin" syntax="dAdmin()">
+			<stacksize value="1"/>
+			<referrer name="darskin"/>
+		</member>
+		<member name="M:dCoins" syntax="dCoins()">
+			<stacksize value="1"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:dDailyCrate" syntax="dDailyCrate()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_GiveDailyCrate"/>
+		</member>
+		<member name="M:dDownloading" syntax="dDownloading()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerFinishedDownloading"/>
+		</member>
+		<member name="M:dLogged" syntax="dLogged()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_EncomendarItem"/>
+			<referrer name="SHOP_PrizeItem"/>
+			<referrer name="OnPlayerFinishedDownloading"/>
+		</member>
+		<member name="M:dMoney" syntax="dMoney()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OpenCrate"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:dSkin" syntax="dSkin()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_CreateActor"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="SHOP_FixSkin"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+		</member>
+		<member name="M:dTempSkin" syntax="dTempSkin()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+			<referrer name="SHOP_CreateActor"/>
+			<referrer name="SHOP_FixSkin"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+		</member>
+		<member name="M:darskin" syntax="darskin(playerid, params[])">
+			<tagname value="CMD"/>
+			<stacksize value="48"/>
+			<dependency name="SHOP_EncomendarItem"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="SendClientMessagef"/>
+			<dependency name="dAdmin"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:db_free_result" syntax="db_free_result()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_AddNewItem"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="SHOP_GiveItem"/>
+			<referrer name="SHOP_EncomendarItem"/>
+			<referrer name="SHOP_CheckNewItems"/>
+			<referrer name="SHOP_DeleteSkin"/>
+			<referrer name="SHOP_PrizeItem"/>
+			<referrer name="SHOP_DeleteExpiredItems"/>
+			<referrer name="SHOP_IsPlayerHaveSkinId"/>
+			<referrer name="SHOP_NewAttachment"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="M:db_get_field_assoc_float" syntax="db_get_field_assoc_float()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+		</member>
+		<member name="M:db_get_field_assoc_int" syntax="db_get_field_assoc_int()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="SHOP_CheckNewItems"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="M:db_next_row" syntax="db_next_row()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_StoreQuery"/>
+		</member>
+		<member name="M:db_num_rows" syntax="db_num_rows()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_AddNewItem"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="SHOP_CheckNewItems"/>
+			<referrer name="SHOP_IsPlayerHaveSkinId"/>
+			<referrer name="SHOP_NewAttachment"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="M:db_open" syntax="db_open()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OpenDatabase"/>
+		</member>
+		<member name="M:db_query" syntax="db_query()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OpenDatabase"/>
+			<referrer name="SHOP_AddNewItem"/>
+			<referrer name="SHOP_StoreQuery"/>
+			<referrer name="SHOP_GiveItem"/>
+			<referrer name="SHOP_EncomendarItem"/>
+			<referrer name="SHOP_CheckNewItems"/>
+			<referrer name="SHOP_DeleteSkin"/>
+			<referrer name="SHOP_PrizeItem"/>
+			<referrer name="SHOP_DeleteExpiredItems"/>
+			<referrer name="SHOP_IsPlayerHaveSkinId"/>
+			<referrer name="SHOP_NewAttachment"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="M:editattach" syntax="editattach(playerid, params[])">
+			<tagname value="CMD"/>
+			<stacksize value="7"/>
+			<dependency name="EditAttachedObject"/>
+			<dependency name="IsPlayerAdmin"/>
+			<dependency name="SendClientMessage"/>
+			<dependency name="sscanf"/>
+			<param name="playerid">
+			</param>
+			<param name="params">
+				<paraminfo> [] </paraminfo>
+			</param>
+		</member>
+		<member name="M:format" syntax="format()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_AddNewItem"/>
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="SHOP_UpdateTexts"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_GiveItem"/>
+			<referrer name="SHOP_EncomendarItem"/>
+			<referrer name="SHOP_CheckNewItems"/>
+			<referrer name="SHOP_DeleteSkin"/>
+			<referrer name="SHOP_PrizeItem"/>
+			<referrer name="SHOP_DeleteExpiredItems"/>
+			<referrer name="SHOP_IsPlayerHaveSkinId"/>
+			<referrer name="OnPlayerRequestDownload"/>
+			<referrer name="SHOP_NewAttachment"/>
+			<referrer name="SHOP_SetPlayerAttachedObject"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="M:getId" syntax="getId()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_EncomendarItem"/>
+			<referrer name="SHOP_PrizeItem"/>
+		</member>
+		<member name="M:getMoneyFormat" syntax="getMoneyFormat()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerClickTextDraw"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+		</member>
+		<member name="M:getNome" syntax="getNome()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_UpdateOrder"/>
+			<referrer name="SHOP_GiveItem"/>
+			<referrer name="SHOP_CheckNewItems"/>
+			<referrer name="SHOP_IsPlayerHaveSkinId"/>
+			<referrer name="SHOP_OpenCrate"/>
+			<referrer name="OnPlayerFinishedDownloading"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:gettime" syntax="gettime()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OnPlayerSelectItem"/>
+			<referrer name="SHOP_GiveItem"/>
+			<referrer name="SHOP_GiveDailyCrate"/>
+			<referrer name="SHOP_CheckNewItems"/>
+			<referrer name="SHOP_DeleteExpiredItems"/>
+			<referrer name="OnPlayerRequestDownload"/>
+			<referrer name="SHOP_OpenCrate"/>
+			<referrer name="OnTextDialogResponse"/>
+		</member>
+		<member name="M:givePlayerPoints" syntax="givePlayerPoints()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="M:hideLoginMenu" syntax="hideLoginMenu()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_ShowForPlayer"/>
+		</member>
+		<member name="M:printf" syntax="printf()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerRequestDownload"/>
+			<referrer name="OnPlayerFinishedDownloading"/>
+		</member>
+		<member name="M:random" syntax="random()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_FixSkin"/>
+			<referrer name="SHOP_OpenCrate"/>
+		</member>
+		<member name="M:savePlayerAccount" syntax="savePlayerAccount()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerClickPlayerTextDraw"/>
+		</member>
+		<member name="M:showLoginMenu" syntax="showLoginMenu()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_HideForPlayer"/>
+		</member>
+		<member name="M:showPlayerLoading" syntax="showPlayerLoading()">
+			<stacksize value="1"/>
+			<referrer name="OnPlayerFinishedDownloading"/>
+		</member>
+		<member name="M:sscanf" syntax="sscanf()">
+			<stacksize value="1"/>
+			<referrer name="darskin"/>
+			<referrer name="attachar"/>
+			<referrer name="editattach"/>
+		</member>
+		<member name="M:strcat" syntax="strcat()">
+			<stacksize value="1"/>
+			<referrer name="SHOP_OnPlayerSelectCrate"/>
+		</member>
+		<member name="M:stringGlobal" syntax="stringGlobal()">
+			<stacksize value="1"/>
+		</member>
+
+	</members>
+</doc>

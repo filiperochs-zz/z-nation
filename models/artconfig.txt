@@ -1,0 +1,149 @@
+AddSimpleModel(-1, 19379, -1000, "d_object.dff", "background/background.txd");
+AddSimpleModel(-1, 19379, -1001, "d_object.dff", "login_screen/login_screen.txd");
+
+AddSimpleModel(-1, 19379, -1002, "d_object.dff", "shop_design/shop_design.txd");
+AddSimpleModel(-1, 19379, -1003, "d_object.dff", "shop_design/shop_skins.txd");
+
+AddSimpleModel(-1, 19379, -1004, "d_object.dff", "inventory/inventory.txd");
+AddSimpleModel(-1, 19379, -1005, "d_object.dff", "inventory/items.txd");
+
+AddSimpleModel(-1, 19379, -1006, "pubg/helmet1.dff", "pubg/helmet1.txd");
+AddSimpleModel(-1, 19379, -1007, "pubg/helmet2.dff", "pubg/helmet2.txd");
+AddSimpleModel(-1, 19379, -1008, "pubg/helmet3.dff", "pubg/helmet3.txd");
+AddSimpleModel(-1, 19379, -1009, "pubg/colete1.dff", "pubg/colete1.txd");
+AddSimpleModel(-1, 19379, -1010, "pubg/colete2.dff", "pubg/colete2.txd");
+AddSimpleModel(-1, 19379, -1011, "pubg/colete3.dff", "pubg/colete3.txd");
+AddSimpleModel(-1, 19379, -1012, "pubg/backpack1.dff", "pubg/backpack1.txd");
+AddSimpleModel(-1, 19379, -1013, "pubg/backpack2.dff", "pubg/backpack2.txd");
+AddSimpleModel(-1, 19379, -1014, "pubg/backpack3.dff", "pubg/backpack3.txd");
+AddSimpleModel(-1, 19379, -1014, "pubg/pan.dff", "pubg/pan.txd");
+
+AddSimpleModel(-1, 19379, -1015, "d_object.dff", "inventory/weapons.txd");
+
+AddSimpleModel(-1, 19379, -1016, "pubg/colete1_drop.dff", "pubg/colete1.txd");
+AddSimpleModel(-1, 19379, -1017, "pubg/colete2_drop.dff", "pubg/colete2.txd");
+AddSimpleModel(-1, 19379, -1018, "pubg/colete3_drop.dff", "pubg/colete3.txd");
+
+AddSimpleModel(-1, 19379, -1019, "d_object.dff", "hud/hud.txd");
+
+AddSimpleModel(-1, 19379, -1020, "pubg/gasmask.dff", "pubg/gasmask.txd");
+
+AddSimpleModel(-1, 19379, -1021, "pubg/airdrop.dff", "pubg/airdrop.txd");
+AddSimpleModel(-1, 19379, -1022, "pubg/paraquedas.dff", "pubg/paraquedas.txd");
+
+AddSimpleModel(-1, 19379, -1023, "pubg/facao.dff", "pubg/facao.txd");
+
+AddSimpleModel(-1, 19379, -1024, "d_object.dff", "login_screen/login_spawns.txd");
+
+AddSimpleModel(-1, 19379, -1025, "pubg/painkiller.dff", "pubg/painkiller.txd");
+
+AddSimpleModel(-1, 19379, -1026, "pubg/redbull.dff", "pubg/redbull.txd");
+
+AddSimpleModel(-1, 19379, -1027, "pubg/tent.dff", "pubg/tent.txd");
+
+AddSimpleModel(-1, 19379, -1028, "d_object.dff", "emotes/emotes.txd");
+
+AddSimpleModel(-1, 19379, -1029, "d_object.dff", "book/book1.txd");
+AddSimpleModel(-1, 19379, -1030, "d_object.dff", "book/book2.txd");
+AddSimpleModel(-1, 19379, -1031, "d_object.dff", "book/book3.txd");
+AddSimpleModel(-1, 19379, -1032, "d_object.dff", "book/book4.txd");
+AddSimpleModel(-1, 19379, -1033, "pubg/book.dff", "pubg/book.txd");
+
+AddSimpleModel(-1, 19379, -1034, "pubg/9mm/ammo.dff", "pubg/9mm/ammo.txd");
+AddSimpleModel(-1, 19379, -1035, "pubg/9x19mm/ammo.dff", "pubg/9x19mm/ammo.txd");
+AddSimpleModel(-1, 19379, -1036, "pubg/50mm/ammo.dff", "pubg/50mm/ammo.txd");
+AddSimpleModel(-1, 19379, -1037, "pubg/55mm/ammo.dff", "pubg/55mm/ammo.txd");
+AddSimpleModel(-1, 19379, -1038, "pubg/156mm/ammo.dff", "pubg/156mm/ammo.txd");
+AddSimpleModel(-1, 19379, -1040, "pubg/357mm/ammo.dff", "pubg/357mm/ammo.txd");
+AddSimpleModel(-1, 19379, -1041, "pubg/556mm/ammo.dff", "pubg/556mm/ammo.txd");
+AddSimpleModel(-1, 19379, -1042, "pubg/762mm/ammo.dff", "pubg/762mm/ammo.txd");
+
+AddSimpleModel(-1, 19379, -1043, "d_object.dff", "hud/progress.txd");
+
+AddSimpleModel(-1, 19379, -1044, "brokenvehicles/1.dff", "brokenvehicles/1.txd");
+AddSimpleModel(-1, 19379, -1045, "brokenvehicles/2.dff", "brokenvehicles/2.txd");
+AddSimpleModel(-1, 19379, -1046, "brokenvehicles/3.dff", "brokenvehicles/3.txd");
+AddSimpleModel(-1, 19379, -1047, "brokenvehicles/4.dff", "brokenvehicles/4.txd");
+AddSimpleModel(-1, 19379, -1048, "brokenvehicles/5.dff", "brokenvehicles/5.txd");
+AddSimpleModel(-1, 19379, -1049, "brokenvehicles/6.dff", "brokenvehicles/6.txd");
+
+AddSimpleModel(-1, 19379, -1050, "basebuilds/barreira.dff", "basebuilds/barreira.txd");
+AddSimpleModel(-1, 19379, -1051, "basebuilds/barreiraferro.dff", "basebuilds/barreiraferro.txd");
+AddSimpleModel(-1, 19379, -1052, "basebuilds/barreiragrande.dff", "basebuilds/barreiragrande.txd");
+AddSimpleModel(-1, 19379, -1053, "basebuilds/torre.dff", "basebuilds/torre.txd");
+AddSimpleModel(-1, 19379, -1054, "basebuilds/tendagrande.dff", "basebuilds/tendagrande.txd");
+AddSimpleModel(-1, 19379, -1055, "basebuilds/cercamadeira.dff", "basebuilds/cercamadeira.txd");
+AddSimpleModel(-1, 19379, -1056, "basebuilds/murocon.dff", "basebuilds/murocon.txd");
+AddSimpleModel(-1, 19379, -1057, "basebuilds/murofer.dff", "basebuilds/murofer.txd");
+AddSimpleModel(-1, 19379, -1058, "basebuilds/muromad.dff", "basebuilds/muromad.txd");
+
+AddSimpleModel(-1, 19379, -1059, "pubg/isqueiro.dff", "pubg/isqueiro.txd");
+
+AddSimpleModel(-1, 19379, -1060, "food_drink/Can_beans.dff", "food_drink/Can_beans.txd");
+AddSimpleModel(-1, 19379, -1061, "food_drink/Can_Frank.dff", "food_drink/Can_Frank.txd");
+AddSimpleModel(-1, 19379, -1062, "food_drink/Can_Pasta.dff", "food_drink/Can_Pasta.txd");
+AddSimpleModel(-1, 19379, -1063, "food_drink/Can_sardines.dff", "food_drink/Can_sardines.txd");
+AddSimpleModel(-1, 19379, -1064, "food_drink/Soda_montadew.dff", "food_drink/Soda_montadew.txd");
+AddSimpleModel(-1, 19379, -1065, "food_drink/Soda_pepsi.dff", "food_drink/Soda_pepsi.txd");
+AddSimpleModel(-1, 19379, -1066, "food_drink/can_empty.dff", "food_drink/can_empty.txd");
+
+AddSimpleModel(-1, 19379, -1067, "basebuilds/tentbig.dff", "basebuilds/tentbig.txd");
+
+AddSimpleModel(-1, 19379, -1068, "pubg/trapclose.dff", "pubg/trapclose.txd");
+AddSimpleModel(-1, 19379, -1069, "pubg/trapopen.dff", "pubg/trapopen.txd");
+
+AddSimpleModel(-1, 19379, -1070, "basebuilds/poco.dff", "basebuilds/poco.txd");
+
+AddSimpleModel(-1, 874, -1071, "pubg/grass.dff", "pubg/grass.txd");
+
+AddCharModel(136, 25000, "skins/zombies/seller.dff", "skins/zombies/seller.txd");
+
+AddCharModel(136, 25001, "skins/zombies/1.dff", "skins/zombies/1.txd");
+AddCharModel(136, 25002, "skins/zombies/2.dff", "skins/zombies/2.txd");
+AddCharModel(136, 25003, "skins/zombies/3.dff", "skins/zombies/3.txd");
+AddCharModel(136, 25004, "skins/zombies/4.dff", "skins/zombies/4.txd");
+AddCharModel(136, 25005, "skins/zombies/5.dff", "skins/zombies/5.txd");
+AddCharModel(136, 25006, "skins/zombies/6.dff", "skins/zombies/6.txd");
+AddCharModel(136, 25007, "skins/zombies/7.dff", "skins/zombies/7.txd");
+AddCharModel(136, 25008, "skins/zombies/8.dff", "skins/zombies/8.txd");
+AddCharModel(136, 25009, "skins/zombies/9.dff", "skins/zombies/9.txd");
+AddCharModel(136, 25010, "skins/zombies/10.dff", "skins/zombies/10.txd");
+AddCharModel(136, 25011, "skins/zombies/11.dff", "skins/zombies/11.txd");
+AddCharModel(136, 25012, "skins/zombies/12.dff", "skins/zombies/12.txd");
+AddCharModel(136, 25013, "skins/zombies/13.dff", "skins/zombies/13.txd");
+AddCharModel(136, 25014, "skins/zombies/14.dff", "skins/zombies/14.txd");
+AddCharModel(136, 25015, "skins/zombies/15.dff", "skins/zombies/15.txd");
+AddCharModel(136, 25016, "skins/zombies/16.dff", "skins/zombies/16.txd");
+AddCharModel(129, 25017, "skins/zombies/17.dff", "skins/zombies/17.txd");
+AddCharModel(136, 25018, "skins/zombies/18.dff", "skins/zombies/18.txd");
+AddCharModel(136, 25019, "skins/zombies/19.dff", "skins/zombies/19.txd");
+AddCharModel(129, 25020, "skins/zombies/20.dff", "skins/zombies/20.txd");
+
+AddCharModel(5, 25021, "skins/zombies/fat.dff", "skins/zombies/fat.txd");
+
+AddCharModel(136, 25023, "skins/zombies/flamer.dff", "skins/zombies/flamer.txd");
+
+AddCharModel(136, 25024, "skins/zombies/wolf.dff", "skins/zombies/wolf.txd");
+
+AddCharModel(141, 21001, "skins/female/4_padrao/21001.dff", "skins/female/4_padrao/21001.txd");
+AddCharModel(240, 21002, "skins/male/4_padrao/21002.dff", "skins/male/4_padrao/21002.txd");
+AddCharModel(141, 21003, "skins/female/4_padrao/21003.dff", "skins/female/4_padrao/21003.txd");
+AddCharModel(240, 21004, "skins/male/4_padrao/21004.dff", "skins/male/4_padrao/21004.txd");
+
+AddCharModel(240, 22001, "skins/dimmy/1.dff", "skins/dimmy/1.txd");
+
+AddCharModel(141, 22002, "skins/anjo/1.dff", "skins/anjo/1.txd");
+
+AddCharModel(141, 22003, "skins/sarah/1.dff", "skins/sarah/1.txd");
+
+AddCharModel(240, 22004, "skins/tommy/1.dff", "skins/tommy/1.txd");
+
+AddCharModel(240, 22005, "skins/nicky/1.dff", "skins/nicky/1.txd");
+
+AddCharModel(211, 22006, "skins/admin/admin.dff", "skins/admin/admin.txd");
+
+AddCharModel(285, 22007, "skins/premium/johnwick.dff", "skins/premium/johnwick.txd");
+
+AddCharModel(285, 22008, "skins/premium/br.dff", "skins/premium/br.txd");
+
+AddCharModel(285, 22009, "skins/premium/yt.dff", "skins/premium/yt.txd");

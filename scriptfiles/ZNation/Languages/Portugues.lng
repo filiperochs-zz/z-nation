@@ -1,0 +1,389 @@
+// Sem permissão para comandos
+NO_PERMISSION=ERRO: {999999}Você não tem autorização para usar este comando!
+
+MSG_001=ERRO: {999999}Modelo de 400 á 610
+MSG_002=ERRO: {999999}Cor de -1 á 255
+MSG_003=ERRO: {999999}Você não está em nenhum veículo!
+MSG_004={FAF0CE}Você setou %.1f de vida para o carro.
+MSG_005=ERRO: {999999}O valor deve ser acima de zero!
+MSG_006={FAF0CE}O servidor agora irá reiniciar em %s.
+MSG_007={FAF0CE}Você foi até a posição %f %f %f
+MSG_008={FAF0CE}VirtualWorld trocado para: %d
+MSG_009={FAF0CE}Você pegou um jetpack.
+MSG_010=ERRO: {999999}Este jogador não está conectado!
+MSG_011={FAF0CE}Você deu a arma %s com %d munição para %s.
+MSG_012={FAF0CE}Você ganhou a arma %s com %d munição de um administrador.
+MSG_013={FAF0CE}Clima do servidor alterado para: Hora: %d | Tempo: %d
+MSG_014={FAF0CE}Você trouxe o jogador %s até sua posição.
+MSG_015={FAF0CE}Um administrador levou você até a posição dele.
+MSG_016={FAF0CE}Você foi até a posição do jogador %s.
+MSG_017={FAF0CE}Um administrador veio até sua posição.
+MSG_018={FAF0CE}Você explodiu o jogador %s.
+MSG_019={FAF0CE}Você foi explodido por um administrador
+MSG_020={FAF0CE}Você setou %.1f de vida para o jogador %s.
+MSG_021={FAF0CE}Um administrador setou %.1f de vida para você.
+MSG_022={FAF0CE}Você deu admin level %s para o jogador %s
+MSG_023={FAF0CE}O administrador %s tornou você administrador level %s.
+MSG_024={FAF0CE}Você setou o nome de %s para %s.
+MSG_025={FAF0CE}Seu nome foi setado para %s
+MSG_026=ERRO: {999999}Este nick não consta na lista de banidos!
+MSG_027={FAF0CE}Você deu um tapa em %s
+MSG_028={FAF0CE}Um administrador deu um tapa em você.
+MSG_029=ERRO: {999999}Você não pode usar este comando agora!
+MSG_030=ERRO: {999999}Você não pode usar o rádio agora.
+MSG_031=ERRO: {999999}Você não possui um rádio.
+MSG_032=Você definiu a estação do seu rádio para %.1f.
+MSG_033=ERRO: {999999}Você deve digitar uma senha com no mínimo {FF5555}5{999999} caracteres.
+MSG_034=• Conta criada, agora digite a senha novamente para logar
+MSG_035=• Logado com sucesso, escolha uma opção
+MSG_036=ERRO: {999999}Senha incorreta !
+MSG_037=ERRO: {999999}Você não pode falar no chat agora.
+MSG_038=ERRO: {999999}Este jogador ainda não logou no servidor!
+MSG_039=Voce esta dentro do gas toxico!
+MSG_040=Voce tem 30 segundos para comemorar.
+MSG_041=Parabens, parabens!!! Voce acaba de ganhar o Battle Royale.
+MSG_042=Sobreviventes: %d / Safe: %s
+MSG_043=ERRO: {FFFFFF}Você já está cortando a carne de algum animal.
+MSG_044=ERRO: {999999}Você precisa ter uma faca em mãos para cortar a carne desse animal.
+MSG_045=Você está retirando a carne desse animal, aguarde alguns segundos...
+MSG_046=ERRO: {999999}Você não está perto de nenhum animal morto.
+MSG_047=ERRO: {999999}Você não participa de nenhum grupo!
+MSG_048=ERRO: {999999}Você não é líder de nenhum grupo!
+MSG_049=ERRO: {999999}O tamanho do nome do grupo deve estar entre %d - %d caracteres!
+MSG_050=ERRO: {999999}Já existe um grupo chamado %s, escolha outro nome!
+MSG_051=ERRO: {999999}Você já pertence a um grupo!
+MSG_052=ERRO: {999999}Você precisa ter nível {00FFFF}%d {999999}para criar um grupo!
+MSG_053=GRUPO: Você criou um grupo com o nome: %s
+MSG_054=ERRO: {999999}O servidor excedeu o limite de grupos!
+MSG_055=ERRO: {999999}Este jogador já participa do seu grupo!
+MSG_056=ERRO: {999999}Este jogador já participa de algum grupo!
+MSG_057=Convite: Você convidou %s para participar de seu grupo!
+MSG_058=Convite: Você foi convidado por %s para participar do grupo %s.
+MSG_059=Você acaba de entrar para o grupo %s, use /grupos para mais informações.
+MSG_060=ERRO: {999999}Não há mais vagas no grupo!
+MSG_061=ERRO: {999999}Você não foi convidado para participar de nenhum grupo!
+MSG_062=ERRO: {999999}Você recusou o convite para entrar no grupo!
+MSG_063=Você limpou a vaga %d que pertencia a %s.
+MSG_064=Você foi expulso do grupo %s pelo líder do mesmo!
+MSG_065=Você destruiu seu grupo %s, ele não poderá mais ser recuperado!
+MSG_066=ERRO: {999999}Você não pode sair do grupo, pois é o líder do mesmo!
+MSG_067=Você saiu do grupo %s, você poderá voltar apenas com o convite do líder!
+MSG_068=Inicie um novo jogo para ver novamente a introdução.
+MSG_069=Você verá a introdução do servidor novamente ao iniciar um novo jogo.
+MSG_070=ERRO: {999999}Não há itens suficiêntes para ser utilizado !
+MSG_071=ERRO: {999999}Esta tenda precisa ter %d slots livres para guardar este item.
+MSG_072=ERRO: {999999}Este veículo precisa ter %d slots livres para guardar este item.
+MSG_073=ERRO: {999999}Você precisa de %d slots livres em seu inventário.
+MSG_074=ERRO: {999999}Você não pode utilizar essa opção enquanto está craftando.
+MSG_075=ERRO: {999999}Nenhum resultado encontrado. Veja a lista de receitas clicando em 'Receitas'.
+MSG_076=Você deu %d de cash para o jogador %s.
+MSG_077=Um administrador deu %d de cash para você.
+MSG_078=Você setou %d de cash para o jogador %s.
+MSG_079=Um administrador setou %d de cash para você.
+
+// Mensagem de não logado
+MSG_NO_LOGGED=ERRO: {999999}Você não está logado!
+
+// Personagem
+MSG_PERSON=ERRO: {999999}Você não tem pontos suficiêntes para iniciar com este personagem!
+
+// Menu de login
+LOGIN_MENU_NEWGAME=Iniciar novo jogo~n~~n~~n~Battle Royale~n~~n~~n~Ranking~n~~n~~n~Configuracoes~n~~n~~n~~w~Acessorios
+LOGIN_MENU_CONTINUE=Continuar jogando...~n~~n~~n~Battle Royale~n~~n~~n~Ranking~n~~n~~n~Configuracoes~n~~n~~n~~w~Acessorios
+LOGIN_MENU_ENTER=Fazer login~n~~n~~n~Battle Royale~n~~n~~n~Ranking~n~~n~~n~Configuracoes~n~~n~~n~~w~Acessorios
+LOGIN_MENU_REGISTER=Registrar conta~n~~n~~n~Battle Royale~n~~n~~n~Ranking~n~~n~~n~Configuracoes~n~~n~~n~~w~Acessorios
+
+// Audio plugin
+MSG_AUDIO_DC=*Audio Plugin: Conexão perdida!
+MSG_AUDIO_DOWNLOAD=Fazendo o download dos arquivos~n~%.0f
+
+// Dialog de registro e login
+LOGIN_DIALOG1={999999}| {FFFFFF}Bem vindo ao servidor: {00AAFF}Z Nation - DayZ
+LOGIN_DIALOG2={999999}| {FFFFFF}Você ainda {FF5555}não possui {FFFFFF}uma conta registrada no servidor.
+LOGIN_DIALOG3={999999}| {FFAAAA}× A senha deve conter entre 6 e 75 caracteres
+LOGIN_DIALOG4={999999}| {FFAAAA}× Letras maiúsculas diferenciam de letras minusculas
+LOGIN_DIALOG5={999999}| Digite sua senha abaixo:
+LOGIN_DIALOG6={999999}| {FFFFFF}Você {00CC00}possui {FFFFFF}uma conta registrada no servidor.
+
+// INFO
+INFO_0=Itens~n~Zombies mortos~n~Players mortos~n~Tempo vivo~n~ZP~n~Dinheiro~n~~n~Arma~n~Municao~n~Dano
+INFO_1=BAU~n~~n~Slots: %d/%d~n~
+INFO_2=MOCHILA~n~~n~Slots: %d/%d~n~
+INFO_3=VEICULO~n~~n~Slots: %d/%d~n~
+INFO_4=Perna quebrada
+INFO_5=Nenhum problema
+INFO_6=Servidor reiniciando em: %s
+INFO_7=Vida: %.1f
+INFO_8=Fome: %.1f
+INFO_9=Sede: %.1f
+INFO_10=Radiacao: %.1f
+INFO_11=Corpo: %s
+INFO_12=Sangramento: %.1f
+INFO_13=Virus Zombie: %.1f
+
+// STATUS
+ST_1={FFFFFF}Level: {AA5500}%d
+ST_2={FFFFFF}Pontos: {AA5500}%d
+ST_3={FFFFFF}Dinheiro: {AA5500}$%s
+ST_4={FFFFFF}Tempo vivo: {AA5500}%s
+ST_5={FFFFFF}Matou: {AA5500}%d
+ST_6={FFFFFF}Morreu: {AA5500}%d
+ST_7={FFFFFF}Zombies mortos: {AA5500}%d
+ST_8={FFFFFF}Participações: {AA5500}%d
+ST_9={FFFFFF}Matou: {AA5500}%d
+ST_10={FFFFFF}Morreu: {AA5500}%d
+ST_11={FFFFFF}Total de vitórias: {AA5500}%d
+ST_12={FFFFFF}Status de: {FFFFFF}%s
+
+// MAP
+MAP_1=Posicao: %s
+MAP_2=Posicao: desconhecida
+MAP_3=ERRO: {999999}Você não tem um mapa!
+
+// MORTES
+MSG_DEAD_1=Aviso: Você morreu de intoxicacao.
+MSG_DEAD_2=Aviso: Você morreu de fome.
+MSG_DEAD_3=Aviso: Você morreu de sede.
+MSG_DEAD_4=Aviso: Você morreu por hemorragia, intoxicação ou contaminação.
+MSG_DEAD_5=Aviso: Você morreu no gás tóxico.
+
+// Groups
+GP_1=Nome: %s~n~
+GP_2=Lider: %s~n~~n~~d~ Membros:~n~~n~
+GP_3=Id da vaga
+GP_4=Nome do membro
+GP_5=Limpar vaga
+GP_6={999999}Você está prestes a criar um grupo.
+GP_7={00FFFF}Requisitos para criar um grupo:
+GP_8={FFFFFF} • Ter nivel 5 ou mais
+GP_9={999999}Certifique-se de que o nome do grupo não exceda o limite de caracteres (15)
+GP_10={999999}Você está prestes a {FF0000}destruir {999999}seu grupo.
+GP_11={00FFFF} Informações do seu grupo:
+GP_12={999999}Nome do grupo: {00FFFF}%s
+GP_13={999999}Total de membros: {00FFFF}%d
+GP_14={999999}OBS: Uma vez destruido, o grupo não poderá mais ser recuperado.
+GP_15={999999}Você está prestes a convidar alguém para seu grupo.
+GP_16={999999}Digite abaixo o {00FFFF}Id/Nick {999999}do jogador que você deseja convidar para o grupo:
+GP_17={999999}Você está prestes a {FF0000}sair {999999}do seu grupo.
+GP_18={999999}OBS: Caso você sair, poderá voltar apenas com o convite do líder.
+GP_19={FF0000}VOCÊ REALMENTE DESEJA SAIR DO GRUPO?
+GP_20={999999}Você foi convidado para participar de um grupo.
+GP_21={FFFFFF}Informações do grupo:
+GP_22={999999}Líder: {00FFFF}%s
+GP_23={999999}Você aceita participar do grupo? Escolha uma opção abaixo:
+GP_24=ERRO: {999999}Grupo inexistente!
+
+// Menus
+MENU_CANCEL=Cancelar
+MENU_RETURN=Retornar
+MENU_SELECT=Selecionar
+MENU_CONFIRM=Confirmar
+MENU_YES=Sim
+MENU_NO=Nao
+MENU_DESTROY=Destruir
+MENU_INVITE=Convidar
+MENU_CREATE=Criar
+
+// Comando inválido
+MSG_INVALID_COMMAND=ERRO: {999999}O comando ({FF5555}%s{999999}) que você digitou é inexistente.
+
+// Mensagens de ban
+MSG_BAN=[Admin aviso]: {FF5555}O player %s foi banido do servidor pelo motivo: %s
+MSG_BAN_OFF=[Admin aviso]: {FF5555}O nick %s foi banido do servidor pelo motivo: %s
+MSG_TEMP_BAN=[Admin aviso]: {FF5555}O player %s foi banido por %d dias do servidor pelo motivo: %s
+MSG_KICK=[Admin aviso]: {FF5555}O player %s foi kickado do servidor pelo motivo: %s
+MSG_DESBAN=[Admin aviso]: {FF5555}O nick %s foi desbanido do servidor.
+MSG_DESBAN_IP=[Admin aviso]: {FF5555}O ip %s foi desbanido do servidor.
+ALREADY_BAN=ERRO: {999999}Este nick já consta na lista de banidos!
+CONNECTED=ERRO: {999999}Este jogador está conectado, você deve usar o comando /banir!
+IP_BAN=ERRO: {999999}Este ip não consta na lista de banidos!
+MSG_KICKG=[Admin aviso]: {FF5555}O grupo %s foi kickado do servidor pelo motivo: %s
+
+// Textdraws
+TD_1=Musica ambiente~n~~n~Pontuacao em 3D~n~~n~Camera em 1| pessoa~n~~n~Economia de banda~n~~n~Idioma~n~~n~Clima automatico
+TD_2=~d~ Lista de grupos          ~d~ Membros do grupo
+TD_3=~>~  Criar grupo~n~~n~~>~  Meu grupo~n~~n~~>~  Convidar~n~~n~~>~  Limpar~n~~n~~>~  Destruir~n~~n~~>~  Sair do grupo
+TD_4=~d~ Proximidade
+TD_6=~d~ Itens do Inventario
+TD_7=Arma branca~n~~n~~n~~n~~n~~n~~n~Arma leve~n~~n~~n~~n~~n~~n~~n~Arma pesada
+TD_8=craft~n~~n~receitas~n~~n~resetar
+
+// server msgs
+SMSG0=Z Nation: {FFFFFF}Use /sos para pedir ajuda a um administrador.
+SMSG1=Z Nation: {FFFFFF}Use /ajuda para ver os principais comandos do servidor.
+SMSG2=Z Nation: {FFFFFF}Aperte a tecla Y para abrir seu inventário.
+SMSG3=Z Nation: {FFFFFF}Segure a tecla N para abrir o menu de criação de bases.
+SMSG4=Z Nation: {FFFFFF}Aperte a tecla N para abrir o menu de opções.
+SMSG5=Z Nation: {FFFFFF}Use /menu para voltar ao menu principal do servidor.
+SMSG6=Z Nation: {FFFFFF}Aperte a tecla Y dentro de um veiculo para ligar ou desligar o motor.
+SMSG7=Z Nation: {FFFFFF}Seja um jogador premium e ajude a manter o servidor online.
+SMSG8=Z Nation: {FFFFFF}Não deixe de seguir o servidor nas redes sociais /facebook e /youtube.
+SMSG9=Z Nation: {FFFFFF}Convide seus amigos para jogar no servidor e ganhe premios.
+SMSG10=Z Nation: {FFFFFF}Fique por dentro de todas as novidades em nosso forum: www.znation.brasilplaystart.com.br/forum
+SMSG11=Z Nation: {FFFFFF}Coloque nosso IP em seus favoritos: 158.69.128.125:7777
+
+// stop flood
+STOP_FLOOD=Aguarde um pouco para digitar outro comando...
+STOP_SPAM=Você está digitando muito rápido...
+
+MSG_80=ERRO: {999999}Você não tem os recursos necessários para criar este objeto.
+MSG_81=ERRO: {999999}Você não pode criar um objeto próximo a outra base.
+MSG_82=ERRO: {999999}Apenas jogadores premium pode ter acesso a mais de 2 bases!
+MSG_83=ERRO: {999999}Você pode ter acesso a no máximo 4 armários!
+MSG_84=ERRO: {999999}O limite de bases no servidor já foi atingido.
+MSG_85=ERRO: {999999}Essa base já possui um armário ou o limite de objetos foi excedido.
+MSG_86=ERRO: {999999}Essa base atingiu o limite de objetos disponíveis.
+MSG_87=Voce deseja excluir este objeto da base?
+MSG_88=ERRO: {999999}Você não pode dar upgrade nesse objeto.
+MSG_89=ERRO: {999999}Você deve esperar %d segundos para dar upgrade nesse objeto novamente.
+MSG_90=~w~~h~Aperte ~b~~h~N ~w~~h~para construir
+MSG_91=~r~~h~Construcao bloqueada
+MSG_92=Você entrou no lobby do battle royale, use {FFFFFF}/menu {00AAFF}para voltar ao menu principal.
+MSG_93=Uma partida já está em andamento, você deverá aguardar até que uma nova comece!
+MSG_94=Você ainda não pode pular do avião...
+MSG_95=[Global chat]: O chat global foi desativado por um administrador.
+MSG_96=[Global chat]: O chat global foi ativado por um administrador.
+MSG_97=Use o comando {FFFF00}/re {FF5500}para responder o administrador que atendeu você.
+MSG_98=O administrador finalizou o atendimento.
+MSG_99=AVISO: O servidor irá reiniciar em instantes.
+MSG_100=[Aviso admin]: {FF5555}%s foi mutado por %d minutos por um administrador, motivo: %s
+MSG_101=Ticket enviado aos administradores: %s
+MSG_102=Report enviado aos administradores
+MSG_103=ERRO: {999999}Você precisa estar em uma mesa de craft para fazer este item.
+MSG_104=ERRO: {999999}Você precisa de %d slots em seu inventário para criar este item.
+MSG_105=ERRO: {999999}Você precisa de um 'Facão' para cortar esta arvore.
+MSG_106=ERRO: {999999}Você precisa de uma 'Marreta' para martelar.
+MSG_107=ERRO: {999999}Você precisa de nível %d para iniciar com este personagem.
+MSG_108=ERRO: {999999}Apenas jogadores PREMIUM podem iniciar com esta skin.
+MSG_109=Veículo sem bateria...
+MSG_110=Veículo sem combustível...
+MSG_111=ERRO: {999999}Você já está usando um colete militar.
+MSG_112=ERRO: {999999}Este colete está muito danificado.
+MSG_113=ERRO: {999999}Você já está usando um capacete.
+MSG_114=ERRO: {999999}Você não precisa usar painkiller.
+MSG_115=ERRO: {999999}Você não está carregando uma arma compatível com essa munição!
+MSG_116=ERRO: {999999}Você não pode trocar de roupa dentro de um carro!
+MSG_117=ERRO: {999999}Para usar o mapa, você deve segurar a tecla '{00AAFF}H{999999}' e se localizar!
+MSG_118=ERRO: {999999}Você não pode usar a bússola, verifique sua direção do lado direito da sua tela !
+MSG_119=ERRO: {999999}Este galão de gasolina já está cheio!
+MSG_120=ERRO: {999999}Esta bomba de combustível está vazia!
+MSG_121=ERRO: {999999}Você não está próximo à um veículo ou de uma bomba de gasolina!
+MSG_122=ERRO: {999999}Você não tem gasolina suficiênte no galão!
+MSG_123=ERRO: {999999}Você não está próximo do tanque de gasolina do carro!
+MSG_124=ERRO: {999999}Este veículo está com o tanque cheio!
+MSG_125=ERRO: {999999}Você não está perto de uma das rodas do veículo!
+MSG_126=ERRO: {999999}Este pneu não precisa de reparos!
+MSG_127=ERRO: {999999}Você não está próximo do motor do veículo!
+MSG_128=ERRO: {999999}Este veículo não precisa ser reparado!
+MSG_129=ERRO: {999999}Este veículo não precisa de uma bateria nova!
+MSG_130=ERRO: {999999}Você já possui uma mochila igual ou maior!
+MSG_131=ERRO: {999999}Você já está usando uma máscara de gás!
+MSG_132=ERRO: {999999}Você não está em algum rio ou lagoas para pescar!
+MSG_133=ERRO: {999999}Você já está usando uma lanterna!
+MSG_134=ERRO: {999999}Você já está fumando um cigarro!
+MSG_135=SERVER: Use o botão direito para fumar ou a tecla 'F' para apagar o cigarro.
+MSG_136=ERRO: {999999}Você já está bebendo algo!
+MSG_137=SERVER: Use o botão direito para beber ou a tecla 'F' para largar a garrafa.
+MSG_138=ERRO: {999999}Você não está em nenhum local para pegar água!
+MSG_139=ERRO: {999999}Você deve estar nas costas do jogador para algemá-lo.
+MSG_140=ERRO: {999999}Este jogador já está algemado.
+MSG_141=ERRO: {999999}Você deve estar próximo a um jogador.
+MSG_142=ERRO: {999999}Você deve estar nas costas do jogador.
+MSG_143=ERRO: {999999}Este jogador não está algemado.
+MSG_144={AAAAAA}Tempo ({FF5555}em segundos 10 - 200{AAAAAA}) para a bomba detonar:
+MSG_145=ERRO: {999999}Você não está perto de nenhum explosivo remoto.
+MSG_146={FF5500}Você detonou um explosivo remoto.
+MSG_147=ERRO: {999999}Houve um erro ao usar este item!
+MSG_148={FF5500}Atenção: O explosivo irá detonar em %d segundos, saia de perto o quanto antes!
+MSG_149={FF5500}Atenção: Explosivo armado com sucesso, use um controle remoto próximo a ele para detonar!
+MSG_150=ERRO: {999999}Você não tem espaço suficiênte na mochila.
+MSG_151=Você conseguiu pescar um peixe, ele está na sua mochila.
+MSG_152=Parece que nenhum peixe mordeu a isca, tente novamente...
+MSG_153=OBS: Sua vara de pescar quebrou devido a muito uso.
+MSG_154=ERRO: {999999}Você deve digitar uma quantidade acima de zero.
+MSG_155=ERRO: {999999}Você não tem %d madeiras para guardar no inventário.
+MSG_156=ERRO: {999999}Você não tem %d rochas para guardar no inventário.
+MSG_157=ERRO: {999999}Você não tem %d metais para guardar no inventário.
+MSG_158=ERRO: {999999}Houve um erro ao tentar dropar este item.
+MSG_159=ERRO: {999999}Você deve digitar uma quantia acima de 0.
+MSG_160=ERRO: {999999}Você não tem toda essa quantia ou está tentando dropar tudo.
+MSG_161=ERRO: {999999}Você não está próximo à um veículo.
+
+BR_WIN=A BATALHA TERMINOU TENDO VOCE COMO VENCEDOR~n~PARABENS E CURTA SUA VITORIA!
+MSG_MUTE=ERRO: {999999}Você está mutado por {FF5555}%d {999999}segundos.
+
+HELP01={FFFFFF}PLAYER COMANDOS:
+HELP02={FF7777}/status     \t{AAAAAA}Informa os status da sua conta
+HELP03={FF7777}/menu       \t{AAAAAA}Volta ao menu principal
+HELP04={FF7777}(/r)adio    \t{AAAAAA}Fala na estação de rádio
+HELP05={FF7777}/estacao    \t{AAAAAA}Define a nova estação do seu rádio
+HELP06={FF7777}(/g)lobal   \t{AAAAAA}Fala no chat global
+HELP07={FF7777}(/gr)itar   \t{AAAAAA}Grita para todos os players proximos
+HELP08={FF7777}/intro      \t{AAAAAA}Para ver novamente a intro
+HELP09={FF7777}/menuzp     \t{AAAAAA}Abre o menu de z points
+HELP10={FF7777}/assobiar   \t{AAAAAA}Atrai os zombies próximos
+HELP11={FF7777}/cortarcarne\t{AAAAAA}Corta a carne de um animal morto
+HELP12={FF7777}/grupos     \t{AAAAAA}Abre o menu de grupos
+HELP13={FF7777}/dicas      \t{AAAAAA}Exibe algumas dicas sobre o servidor
+HELP14={FF7777}/ajudabase  \t{AAAAAA}Tudo sobre bases
+HELP15={FF7777}/premium    \t{AAAAAA}Beneficios de conta premium
+HELP16={FF7777}/trocarsenha\t{AAAAAA}Muda sua senha de login
+
+HELP17={FFFFFF}AJUDA:
+HELP18={FF7777}/suporte    \t{AAAAAA}Pede ajuda a um administrador
+HELP19={FF7777}/re         \t{AAAAAA}Manda mensagem para um admin
+HELP20={FF7777}/report     \t{AAAAAA}Reporta um jogador
+
+BASE1={AAAAAA}Segure a letra {FF7777}N {AAAAAA}para abrir o menu de crianção de base
+BASE2={AAAAAA}Você precisa ter um facão ou marreta para coletar os recursos pelo mapa
+BASE3={AAAAAA}Arvores, rochas e ferros estão por todo o mapa e podem ser coletados
+BASE4={AAAAAA}Toda base deve ter um {FF7777}armário de autorização {AAAAAA}para que seja segura
+BASE5={AAAAAA}A base que não tiver armário, poderá ser editada por qualquer um jogador
+BASE6={AAAAAA}Toda base deve ser checada semanalmente para que não seja destruida por inatividade
+BASE7={AAAAAA}A base que estiver {FF7777}INATIVA {AAAAAA}será destruída ao reiniciar o servidor
+
+DICA1={AAAAAA}Aperte a tecla {FF7777}Y {AAAAAA}para abrir o inventário
+DICA2={AAAAAA}Aperte a tecla {FF7777}N {AAAAAA}para abrir algumas opções
+DICA3={AAAAAA}Segure a tecla {FF7777}TAB {AAAAAA}para visualizar os sobreviventes
+DICA4={AAAAAA}Players proximos de voce podem ouvir seu passos e tiros
+DICA5={AAAAAA}Zombies nao podem te ver caso estejam de costas para você
+DICA6={AAAAAA}O dano de armas de fogo mudam dependendo da parte do corpo que atingir
+DICA7={AAAAAA}Voce pode assobiar para atrair zombies para sua direção
+DICA8={AAAAAA}Não passe sua senha para ninguém, a administração não se responsabiliza nesse caso
+
+PREMIUM1={AAAAAA}Premium recebe {FF7777}2x {AAAAAA}de bonus de XP
+PREMIUM2={AAAAAA}Premium pode consertar carros mais rapidamente
+PREMIUM3={AAAAAA}Premium pode usar medkit e bandagem mais rapidamente
+PREMIUM4={AAAAAA}Premium pode ter acesso a {FF7777}4 {AAAAAA}bases diferentes
+PREMIUM5={AAAAAA}Premium tem direito a usar o chat {FF7777}/v {AAAAAA}para se comunicar
+PREMIUM6={AAAAAA}Premium recebe a conquista de {FF7777}Conta Premium
+PREMIUM7={AAAAAA}Premium pode iniciar com várias skins diferentes
+PREMIUM8={AAAAAA}Premium tem cor diferente no chat global
+PREMIUM9={AAAAAA}Premium tem cor diferente na lista de players {FF7777}TAB
+
+SPEEDO=%s~n~Gasolina: %d litros~n~Bateria: %.1f%%~n~Motor: %.0f%%~n~Velocidade: %.0fkm/h
+
+INFODEATH1=%s matou VOCE com %s
+INFODEATH2=Um %s matou VOCE com %s
+INFODEATH3=Voce matou %s com %s
+INFODEATH4=Voce morreu devido a queda
+INFODEATH5=Voce morreu devido a explosao
+INFODEATH6=Voce morreu devido a hemorragia
+INFODEATH7=Voce deixou %s inconsciente devido a %s
+INFODEATH8=%s deixou VOCE inconsciente devido a %s
+INFODEATH9=Voce matou um %s com %s
+
+PROGRESS=APERTE ESC PARA CANCELAR
+NCRAFT1={AA0000}Necessário a mesa de craft
+NCRAFT2={AA0000}Pode ser feito em qualquer lugar
+NCRAFT3={00FF00}  + {777777}O item continuará no seu inventário após o craft
+NCRAFT4={FF0000}  + {777777}O item sumirá no seu inventário após o craft
+
+LEVEL1=| Você atingiu a experiência necessária para passar de nível!
+LEVEL2=| Recompensa por ter alcançado o level %d: {00AA00}$%s
+
+EJECT=Ejetar
+
+MSGBLOCK=[Aviso admin]: {FF5555}%s foi bloqueado por %d minutos por um administrador, motivo: %s
+
+BLOCKED=Conta bloqueada

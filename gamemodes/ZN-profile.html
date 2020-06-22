@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile of 'gamemodes/mainCopia.amx'</title>
+  <script type="text/javascript"
+          src="http://code.jquery.com/jquery-latest.min.js">
+  </script>
+  <script type="text/javascript"
+          src="http://tablesorter.com/__jquery.tablesorter.min.js">
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#data').tablesorter();
+      $('#data th').hover(function () {
+        $(this).css({ cursor: 'pointer' });
+      });
+    });
+  </script>
+</head>
+<body>
+  <style type="text/css">
+    table {
+      margin: 0 auto;
+    }
+    table, th, td {
+      border: thin solid #555;
+      border-collapse: collapse;
+      padding: 7px 10px;
+    }
+    th, td {
+      border: none;
+    }
+    th {
+      color: white;
+      background-color: #555;
+    }
+    td {
+      font-family: Consolas, "DejaVu Sans Mono", "Courier New", Monospace;
+    }
+    td.numeric {
+      text-align: right;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: #eee;
+    }
+    tbody tr:hover {
+      background-color: #c0e3eb;
+    }
+  </style>
+  <table id="meta">
+    <thead>
+      <tr>
+        <th colspan="2">Meta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Date</td>
+        <td>Tue May 29 02:27:43 2018</td>
+      </tr>
+      <tr>
+        <td>Duration</td>
+        <td>00:06:47</td>
+      </tr>
+    </tbody>
+  </table>
+  <br/>
+  <table id="data" class="tablesorter">
+    <thead>
+      <tr>
+        <th rowspan="2">Type</th>
+        <th rowspan="2">Name</th>
+        <th rowspan="2">Calls</th>
+        <th colspan="4" class="group">Self Time</th>
+        <th colspan="4" class="group">Total Time</th>
+      </tr>
+      <tr>
+        <th>%</th>
+        <th>Overall</th>
+        <th>Average</th>
+        <th>Worst</th>
+        <th>%</th>
+        <th>Overall</th>
+        <th>Average</th>
+        <th>Worst</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerConnect</td>
+      <td class="numeric">152</td>
+      <td class="numeric">2.97%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.2</td>
+      <td class="numeric">16.9</td>
+      <td class="numeric">2.82%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.2</td>
+      <td class="numeric">16.9</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerKeyStateChange</td>
+      <td class="numeric">586</td>
+      <td class="numeric">0.98%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.4</td>
+      <td class="numeric">0.93%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.4</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerDisconnect</td>
+      <td class="numeric">2</td>
+      <td class="numeric">7.28%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">28.9</td>
+      <td class="numeric">30.8</td>
+      <td class="numeric">6.92%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">28.9</td>
+      <td class="numeric">30.8</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerGiveDamage</td>
+      <td class="numeric">8</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerTakeDamage</td>
+      <td class="numeric">15</td>
+      <td class="numeric">1.97%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">1.0</td>
+      <td class="numeric">15.4</td>
+      <td class="numeric">1.87%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">1.0</td>
+      <td class="numeric">15.4</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnRequestResponse</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnReachDestination</td>
+      <td class="numeric">80</td>
+      <td class="numeric">0.14%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.14%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerCommandText</td>
+      <td class="numeric">14</td>
+      <td class="numeric">0.04%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">4.97%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">3.0</td>
+      <td class="numeric">35.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnGameModeExit</td>
+      <td class="numeric">1</td>
+      <td class="numeric">15.42%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">122.3</td>
+      <td class="numeric">122.3</td>
+      <td class="numeric">14.66%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">122.3</td>
+      <td class="numeric">122.3</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>YVers_Callback</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>Itter_OPDCInternal</td>
+      <td class="numeric">2</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>Fader_PlayerProcess</td>
+      <td class="numeric">87</td>
+      <td class="numeric">0.12%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.11%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerInteriorChange</td>
+      <td class="numeric">24</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerSpawn</td>
+      <td class="numeric">5</td>
+      <td class="numeric">1.28%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">2.0</td>
+      <td class="numeric">2.6</td>
+      <td class="numeric">1.21%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">2.0</td>
+      <td class="numeric">2.6</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerDeath</td>
+      <td class="numeric">2</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerRequestClass</td>
+      <td class="numeric">2</td>
+      <td class="numeric">0.16%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.7</td>
+      <td class="numeric">0.7</td>
+      <td class="numeric">0.16%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.7</td>
+      <td class="numeric">0.7</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerStateChange</td>
+      <td class="numeric">167</td>
+      <td class="numeric">0.05%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.04%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnUnoccupiedVehicleUpdate</td>
+      <td class="numeric">4</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerUpdate</td>
+      <td class="numeric">4827</td>
+      <td class="numeric">9.50%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">4.7</td>
+      <td class="numeric">9.03%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">4.7</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnVehicleStreamIn</td>
+      <td class="numeric">21</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnDialogResponse</td>
+      <td class="numeric">3</td>
+      <td class="numeric">7.62%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">20.1</td>
+      <td class="numeric">41.0</td>
+      <td class="numeric">7.24%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">20.1</td>
+      <td class="numeric">41.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerClickMap</td>
+      <td class="numeric">6</td>
+      <td class="numeric">0.64%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.9</td>
+      <td class="numeric">2.6</td>
+      <td class="numeric">0.61%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.9</td>
+      <td class="numeric">2.6</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerClickTextDraw</td>
+      <td class="numeric">5</td>
+      <td class="numeric">0.02%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerClickPlayerTextDraw</td>
+      <td class="numeric">5</td>
+      <td class="numeric">2.52%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">4.0</td>
+      <td class="numeric">10.0</td>
+      <td class="numeric">2.40%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">4.0</td>
+      <td class="numeric">10.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>unfreezePlayer</td>
+      <td class="numeric">3</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>UpdateAntiCheatForPlayer</td>
+      <td class="numeric">338</td>
+      <td class="numeric">0.71%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">2.0</td>
+      <td class="numeric">0.67%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">2.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>destroyBloodText</td>
+      <td class="numeric">7</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>hideTextInfoDeath</td>
+      <td class="numeric">3</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>hideTextsConquistas</td>
+      <td class="numeric">2</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>cmd_atrabalhoex</td>
+      <td class="numeric">2</td>
+      <td class="numeric">4.50%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">17.8</td>
+      <td class="numeric">35.0</td>
+      <td class="numeric">4.27%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">17.8</td>
+      <td class="numeric">35.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>cmd_spec</td>
+      <td class="numeric">2</td>
+      <td class="numeric">0.02%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.06%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.3</td>
+      <td class="numeric">0.5</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>cmd_specoff</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>cmd_world</td>
+      <td class="numeric">2</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>cmd_trazer</td>
+      <td class="numeric">2</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>cmd_ir</td>
+      <td class="numeric">5</td>
+      <td class="numeric">0.60%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">1.0</td>
+      <td class="numeric">3.0</td>
+      <td class="numeric">0.57%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">1.0</td>
+      <td class="numeric">3.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnStreamIn</td>
+      <td class="numeric">32</td>
+      <td class="numeric">0.48%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.5</td>
+      <td class="numeric">0.45%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.5</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnStreamOut</td>
+      <td class="numeric">25</td>
+      <td class="numeric">0.54%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.2</td>
+      <td class="numeric">0.8</td>
+      <td class="numeric">0.51%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.2</td>
+      <td class="numeric">0.8</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>UpdateZombieMovements</td>
+      <td class="numeric">3293</td>
+      <td class="numeric">28.71%</td>
+      <td class="numeric">0.2</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">4.7</td>
+      <td class="numeric">27.28%</td>
+      <td class="numeric">0.2</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">4.7</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>respawnZombieWorld</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnRespawn</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnTakeDamage</td>
+      <td class="numeric">8</td>
+      <td class="numeric">0.60%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.6</td>
+      <td class="numeric">4.5</td>
+      <td class="numeric">0.58%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.6</td>
+      <td class="numeric">4.6</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnDeath</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>FCNPC_OnSpawn</td>
+      <td class="numeric">150</td>
+      <td class="numeric">0.13%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.13%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>updateArea51PlayersMap</td>
+      <td class="numeric">83</td>
+      <td class="numeric">0.21%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.19%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>updatePlayersChat</td>
+      <td class="numeric">342</td>
+      <td class="numeric">0.22%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.21%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>securityGamemodeRequest1</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.09%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.7</td>
+      <td class="numeric">0.7</td>
+      <td class="numeric">0.08%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.7</td>
+      <td class="numeric">0.7</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>OnPlayerFinishedDownloading</td>
+      <td class="numeric">10</td>
+      <td class="numeric">0.04%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.2</td>
+      <td class="numeric">0.04%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.2</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>main</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>hideLoading</td>
+      <td class="numeric">3</td>
+      <td class="numeric">0.72%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">1.9</td>
+      <td class="numeric">3.3</td>
+      <td class="numeric">0.68%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">1.9</td>
+      <td class="numeric">3.3</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>spawnarPlayer</td>
+      <td class="numeric">3</td>
+      <td class="numeric">0.02%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.02%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>HidePlayerExp</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.01%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>setVirtualWorldId</td>
+      <td class="numeric">1</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.00%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>updatePlayersServer</td>
+      <td class="numeric">537</td>
+      <td class="numeric">8.07%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">7.8</td>
+      <td class="numeric">7.67%</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">7.8</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>PlayerUpdateTime</td>
+      <td class="numeric">312</td>
+      <td class="numeric">1.17%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.8</td>
+      <td class="numeric">1.11%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.8</td>
+    </tr>
+    <tr>
+      <td>public</td>
+      <td>updatePlayers</td>
+      <td class="numeric">370</td>
+      <td class="numeric">2.34%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">1.9</td>
+      <td class="numeric">2.22%</td>
+      <td class="numeric">0.0</td>
+      <td class="numeric">0.1</td>
+      <td class="numeric">1.9</td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>
